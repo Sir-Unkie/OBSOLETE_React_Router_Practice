@@ -6,6 +6,7 @@ import LoadingSpinner from '../UI/LoadingSpinner';
 import classes from './QuoteForm.module.css';
 
 const QuoteForm = props => {
+  // console.log('asdasdasd');
   const authorInputRef = useRef();
   const textInputRef = useRef();
   const [isTouched, setIsTouched] = useState(false);
@@ -13,7 +14,7 @@ const QuoteForm = props => {
     setIsTouched(true);
   };
   const finishEnteringHandler = e => {
-    e.preventDefault();
+    // e.preventDefault();
     setIsTouched(false);
   };
   function submitFormHandler(event) {
